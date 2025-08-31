@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCDN影视展示</title>
+    <style>
+        body { font-family: 'Microsoft YaHei', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #222; color: #fff; padding: 20px; text-align: center; }
+        nav { background: #333; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 18px; }
+        nav a:hover { color: #ddd; }
+        section { padding: 20px; max-width: 1200px; margin: auto; }
+        .film { display: flex; flex-wrap: wrap; margin-bottom: 30px; align-items: center; }
+        .film img { width: 200px; height: auto; margin-right: 20px; border-radius: 5px; }
+        .film div { flex: 1; min-width: 300px; }
+        .film h3 { margin: 0 0 10px; }
+        .film p { margin: 0 0 15px; }
+        video { max-width: 100%; height: auto; border-radius: 5px; }
+        footer { background: #222; color: #fff; text-align: center; padding: 10px; }
+        @media (max-width: 600px) { .film img { width: 100%; margin-bottom: 10px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GCDN影视展示</h1>
+    </header>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#films">影片</a>
+        <a href="#about">关于</a>
+    </nav>
+    <section id="home">
+        <h2>欢迎体验极简影视</h2>
+        <p>一镜到底，专注展示精彩影视作品，简洁而优雅。</p>
+    </section>
+    <section id="films">
+        <h2>影片展示</h2>
+        <div class="film">
+            <img src="film1.jpg" alt="影片1">
+            <div>
+                <h3>影片标题1</h3>
+                <p>简介：一部扣人心弦的科幻冒险片，探索未知宇宙。</p>
+                <video width="320" height="240" controls>
+                    <source src="movie1.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+            </div>
+        </div>
+        <div class="film">
+            <img src="film2.jpg" alt="影片2">
+            <div>
+                <h3>影片标题2</h3>
+                <p>简介：感人至深的家庭故事，温暖人心。</p>
+                <video width="320" height="240" controls>
+                    <source src="movie2.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+            </div>
+        </div>
+        <div class="film">
+            <img src="film3.jpg" alt="影片3">
+            <div>
+                <h3>影片标题3</h3>
+                <p>简介：动作与悬疑交织，紧张刺激。</p>
+                <video width="320" height="240" controls>
+                    <source src="movie3.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>关于我们</h2>
+        <p>由GCDN110022打造，致力于用极简设计呈现影视之美。</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 GCDN影视展示</p>
+    </footer>
+</body>
+</html>
